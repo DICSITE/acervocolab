@@ -65,6 +65,13 @@ body {
   background-color: var(--background-color);
   font-family: var(--default-font);
 }
+.column.lg-12 {
+  max-width: 800px; /* Define a largura máxima do conteúdo */
+  margin: 0 auto; /* Centraliza o elemento horizontalmente */
+  padding: 0 15px; /* Adiciona espaçamento interno para evitar bordas apertadas */
+  box-sizing: border-box; /* Garante que o padding não afete a largura */
+  text-align: justify; /* Opcional: para alinhar o texto de maneira justificada */
+}
 
 a {
   color: var(--accent-color);
@@ -739,6 +746,9 @@ section,
   background: var(--accent-color);
   color: var(--contrast-color);
   text-decoration: none;
+}
+.column.lg-12 {
+  max-width: 90%; /* Reduz a largura máxima para caber melhor */
 }
 
 @media (min-width: 1024px) {
